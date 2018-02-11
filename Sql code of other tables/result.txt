@@ -1,0 +1,21 @@
+mysql> create table result(User_ID varchar(30),Score_in_Physics int ,Score_in_Ch
+emistry int,Score_in_Maths int,Score_in_SST int );
+Query OK, 0 rows affected (0.45 sec)
+
+mysql> insert into result values('irahul',2,4,3,1);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from result;
++---------+------------------+--------------------+----------------+--------------+
+
+| User_ID | Score_in_Physics | Score_in_Chemistry | Score_in_Maths | Score_in_SST |
+
++---------+------------------+--------------------+----------------+--------------+
+
+| irahul  |                2 |                  4 |              3 |            1 |
+
++---------+------------------+--------------------+----------------+--------------+
+
+1 row in set (0.00 sec)
+
+mysql>

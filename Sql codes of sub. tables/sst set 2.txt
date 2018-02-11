@@ -1,0 +1,28 @@
+mysql> insert into ss2 values(1, 'Biggest Rainforest:','A. Amazon','B. Grand Can
+yon','C. Spancky','D. None');
+Query OK, 1 row affected (0.13 sec)
+
+mysql> insert into ss2 values(2, 'How is lava made: Magma+','A. Water','B. AIR',
+'C. Gravity','D. None');
+Query OK, 1 row affected (0.37 sec)
+
+mysql> insert into ss2 values(3, 'What happens when lava hits water','A. Blows u
+p','B. Turns into Sulphate','C. turns into Rock','D. None');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> insert into ss2 values(4, 'Name of galaxy in which we live','A. WhirlPool
+','B. Black eye','C. Virgo A','D. None');
+Query OK, 1 row affected (0.38 sec)
+
+mysql> select * from ss2;
++------+-----------------------------------+--------------+------------------------+--------------------+---------+
+| Sno  | Question                          | oa           | ob                     | oc                 | od      |
++------+-----------------------------------+--------------+------------------------+--------------------+---------+
+|    1 | Biggest Rainforest:               | A. Amazon    | B. Grand Canyon        | C. Spancky         | D. None |
+|    2 | How is lava made: Magma+          | A. Water     | B. AIR                 | C. Gravity         | D. None |
+|    3 | What happens when lava hits water | A. Blows up  | B. Turns into Sulphate | C. turns into Rock | D. None |
+|    4 | Name of galaxy in which we live   | A. WhirlPool | B. Black eye           | C. Virgo A         | D. None |
++------+-----------------------------------+--------------+------------------------+--------------------+---------+
+4 rows in set (0.00 sec)
+
+mysql>

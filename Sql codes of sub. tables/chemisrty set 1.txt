@@ -1,0 +1,36 @@
+mysql> insert into cs1 values(1,'SI unit of temperature is:','A.Kelvin','B.Cande
+la','C.Kilogram','D. None');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into cs1 values(2,'What is the symbol of hydrogen:','A. Hr','B.Hy'
+,'C. H+','D. H');
+Query OK, 1 row affected (0.39 sec)
+
+mysql> insert into cs1 values(3,'At. weight of 1 water molecule is:','A.18','B.1
+9','C.20','D. None');
+Query OK, 1 row affected (0.36 sec)
+
+mysql> insert into cs1 values(4,'No of particles present in 1 mole are:','A.600'
+,'B.60000','C.62300','D. None');
+Query OK, 1 row affected (0.38 sec)
+
+mysql> select * from cs1;
++------+----------------------------------------+----------+-----------+------------+---------+
+
+| Sno  | Question                               | oa       | ob        | oc         | od      |
+
++------+----------------------------------------+----------+-----------+------------+---------+
+
+|    1 | SI unit of temperature is:             | A.Kelvin | B.Candela | C.Kilogram | D. None |
+
+|    2 | What is the symbol of hydrogen:        | A. Hr    | B.Hy      | C. H+      | D. H    |
+
+|    3 | At. weight of 1 water molecule is:     | A.18     | B.19      | C.20       | D. None |  
+
+|    4 | No of particles present in 1 mole are: | A.600    | B.60000   | C.62300    | D. None |
+
++------+----------------------------------------+----------+-----------+------------+---------+
+
+4 rows in set (0.00 sec)
+
+mysql>

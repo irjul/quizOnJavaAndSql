@@ -1,0 +1,28 @@
+mysql> insert into ms2 values(1, 'Square root of -1:','A. 2i','B. i','C. -i','D.
+ -2i');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into ms2 values(2, 'The nos.2,4,8 are in:','A. A.P.','B. A.G.P.','
+C. G.P.','D. None');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into ms2 values(3, 'Which of the follwing is a function:','A. On-O
+ff','B. To-on','C. One-Many','D. None');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into ms2 values(4, 'Differentation of 3x^2 is:','A. 9x','B. 3x','C
+. x','D. None');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> select * from ms2;
++------+--------------------------------------+-----------+-----------+-------------+---------+
+| Sno  | Question                             | oa        | ob        | oc          | od      |
++------+--------------------------------------+-----------+-----------+-------------+---------+
+|    1 | Square root of -1:                   | A. 2i     | B. i      | C. -i       | D. -2i  |
+|    2 | The nos.2,4,8 are in:                | A. A.P.   | B. A.G.P. | C. G.P.     | D. None |
+|    3 | Which of the follwing is a function: | A. On-Off | B. To-on  | C. One-Many | D. None |
+|    4 | Differentation of 3x^2 is:           | A. 9x     | B. 3x     | C. x        | D. None |
++------+--------------------------------------+-----------+-----------+-------------+---------+
+4 rows in set (0.00 sec)
+
+mysql>

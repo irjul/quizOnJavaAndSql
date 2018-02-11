@@ -1,0 +1,38 @@
+mysql> use quiz;
+Database changed
+
+mysql> create table ps1(Sno int,Question varchar(300),oa varchar(200),ob varchar
+(200),oc varchar(200),od varchar(200));
+Query OK, 0 rows affected (0.17 sec)
+
+mysql> insert into ps1 values(1,'The SI unit of force is:','A. Newton','B. Newto
+n per sec','C. Newton meter','D. None');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into ps1 values(2,'Which of the following is NOT a vector quantity
+:','A. Velocity','B. Displacement','C. Speed','D. None');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into ps1 values(3,'The rate of change of momentum is:','A. Velocit
+y','B. Force','C. Acceleration','D. None');
+Query OK, 1 row affected (0.37 sec)
+
+mysql> select * from ps1;
++------+--------------------------------------------------+-------------+-------------------+-----------------+---------+
+
+| Sno  | Question                                         | oa          | ob                | oc              | od      |
+
++------+--------------------------------------------------+-------------+-------------------+-----------------+---------+
+
+|    1 | The SI unit of force is:                         | A. Newton   | B. Newton per sec | C. Newton meter | D. None |
+
+|    2 | Which of the following is NOT a vector quantity: | A. Velocity | B. Displacement   | C. Speed        | D. None |
+
+|    3 | The rate of change of momentum is:               | A. Velocity | B. Force          | C. Acceleration | D. None |
+
+|    4 | In vaccum all freely Falling objects have:       | A.The same  | B.The same        | C.The same      | D. None |                                                                                          Velocity       Force               Acceleration
++---------------------------------------------------------+-------------+-------------------+-----------------+---------+
+
+3 rows in set (0.02 sec)
+
+mysql>

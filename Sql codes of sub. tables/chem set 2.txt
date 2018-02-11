@@ -1,0 +1,28 @@
+mysql> insert into cs2 values(1, 'Medicine used for cases of swine flue:','A. Ta
+mi flue','B. Combifilame','C. Asomex','D. None');
+Query OK, 1 row affected (0.12 sec)
+
+mysql> insert into cs2 values(2, 'How many elements in all are found:','A.129','
+B. 150','C. 145','D. 119');
+Query OK, 1 row affected (0.34 sec)
+
+mysql> insert into cs2 values(3, 'Latin name of silver is:','A. Argentum','B. Hy
+dragrum','C. Aurum','D. None');
+Query OK, 1 row affected (0.36 sec)
+
+mysql> insert into cs2 values(4, 'SubAtomic particle named after Indian Scientis
+t:','A. Boson','B. Protron','C. Neuton','D. Electrons');
+Query OK, 1 row affected (0.37 sec)
+
+mysql> select * from cs2;
++------+--------------------------------------------------+--------------+----------------+-----------+--------------+
+| Sno  | Question                                         | oa           | ob             | oc        | od           |
++------+--------------------------------------------------+--------------+----------------+-----------+--------------+
+|    1 | Medicine used for cases of swine flue:           | A. Tami flue | B. Combifilame | C. Asomex | D. None      |
+|    2 | How many elements in all are found:              | A. 129       | B. 150         | C. 145    | D. 119       |
+|    3 | Latin name of silver is:                         | A. Argentum  | B. Hydragrum   | C. Aurum  | D. None      |
+|    4 | SubAtomic particle named after Indian Scientist: | A. Boson     | B. Protron     | C. Neuton | D. Electrons |
++------+--------------------------------------------------+--------------+----------------+-----------+--------------+
+4 rows in set (0.00 sec)
+
+mysql>

@@ -1,0 +1,40 @@
+mysql> create table ms1(Sno int,Question varchar(300),oa varchar(200),ob varchar
+(200),oc varchar(200),od varchar(200));
+Query OK, 0 rows affected (0.17 sec)
+
+mysql> insert into ms1 values(1,'Cocentric circles have same:','A.Radius','B.Are
+a','C.Center','D. None');
+Query OK, 1 row affected (0.36 sec)
+
+mysql> insert into ms1 values(2,'A ray has:','A.1 fixed point','B.2 fixed points
+','C.0 fixed points','D. None');
+Query OK, 1 row affected (0.34 sec)
+
+mysql> insert into ms1 values(3,'Sin(90-Q) is:','A.Sin Q','B.Cos Q','C.Sin 90-Si
+n Q','D. None');
+Query OK, 1 row affected (0.11 sec)
+
+mysql> insert into ms1 values(4,'Area of a square is:','A.Side^2','4XSide','C.Si
+de+Side','D. None');
+Query OK, 1 row affected (0.37 sec)
+
+mysql> select * from ms1;
++------+------------------------------+-----------------+------------------+------------------+---------+
+
+| Sno  | Question                     | oa              | ob               | oc               | od      |
+
++------+------------------------------+-----------------+------------------+------------------+---------+
+
+|    1 | Cocentric circles have same: | A.Radius        | B.Area           | C.Center         | D. None |
+
+|    2 | A ray has:                   | A.1 fixed point | B.2 fixed points | C.0 fixed points | D. None |
+
+|    3 | Sin(90-Q) is:                | A.Sin Q         | B.Cos Q          | C.Sin 90-Sin Q   | D. None |
+
+|    4 | Area of a square is:         | A.Side^2        | 4XSide           | C.Side+Side      | D. None |
+
++------+------------------------------+-----------------+------------------+------------------+---------+
+
+4 rows in set (0.00 sec)
+
+mysql>

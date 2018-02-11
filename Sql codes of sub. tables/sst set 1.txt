@@ -1,0 +1,40 @@
+mysql> create table ss1(Sno int,Question varchar(300),oa varchar(200),ob varchar
+(200),oc varchar(200),od varchar(200));
+Query OK, 0 rows affected (0.20 sec)
+
+mysql> insert into ss1 values(1,'What is the capital of Australia:','A.China','B
+.Sydney','C.France','D. None');
+Query OK, 1 row affected (0.36 sec)
+
+mysql> insert into ss1 values(2,'Which country has the largest population:','A.C
+hina','B.India','C.U.S.','D. None');
+Query OK, 1 row affected (0.36 sec)
+
+mysql> insert into ss1 values(3,'Which is the richest country in the world:','A.
+Norway','B.America','C.Qatar','D. None');
+Query OK, 1 row affected (0.38 sec)
+
+mysql> insert into ss1 values(4,'how many oceans are in the world in the world:'
+,'A.5','B.6','C.7','D. None');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> select * from ss1;
++------+------------------------------------------------+----------+-----------+----------+---------+
+
+| Sno  | Question                                       | oa       | ob        | oc       | od      |
+
++------+------------------------------------------------+----------+-----------+----------+---------+
+
+|    1 | What is the capital of Australia:              | A.China  | B.Sydney  | C.France | D. None |
+
+|    2 | Which country has the largest population:      | A.China  | B.India   | C.U.S.   | D. None |
+
+|    3 | Which is the richest country in the world:     | A.Norway | B.America | C.Qatar  | D. None |
+
+|    4 | how many oceans are in the world in the world: | A.5      | B.6       | C.7      | D. None |
+
++------+------------------------------------------------+----------+-----------+----------+---------+
+
+4 rows in set (0.00 sec)
+
+mysql>

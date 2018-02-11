@@ -1,0 +1,65 @@
+login btn
+String ui =u.getText();
+String pas =p.getText();
+        
+        
+        
+        try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "select * from login where User_ID ='" +ui+"'";
+                    ResultSet rs = stmt.executeQuery(query);
+                    if (pas.equals("")||ui.equals(""))
+                    {JOptionPane.showMessageDialog(null,"Please insert complete information");}
+                    else if (rs.next()){
+                    String pword = rs.getString("Password");
+                    if (pword.equals(pas))
+                    {new selectclass().setVisible(true);
+                    
+                            this.setVisible(false);
+                            
+                    }else {JOptionPane.showMessageDialog(null,"Invalid User ID or Password");}}
+                    else {JOptionPane.showMessageDialog(null,"Invalid User ID or Password");
+                    
+                    }
+                    
+                    
+        }
+        catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);}
+
+
+
+
+exit btn
+System.exit(0);
+
+
+
+
+
+
+
+clear btn
+u.setText("");
+p.setText("");
+
+
+
+
+
+
+
+
+register btn
+register r= new register();
+                    
+                            r.setVisible(true);
+                    
+                            this.setVisible(false);
+
+
+
+
+

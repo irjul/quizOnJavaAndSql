@@ -1,0 +1,170 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.sql.*;
+import javax.swing.JOptionPane;
+
+
+
+public class ps1 extends javax.swing.JFrame {
+    int mp =0;
+
+
+
+
+load ques btn
+try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "select * from ps1 where Sno=1;";
+                    ResultSet rs = stmt.executeQuery(query);
+                    if (rs.next()){
+                        String ques = rs.getString("Question");
+                        String a = rs.getString("oa");
+                        String b = rs.getString("ob");
+                        String c = rs.getString("oc");
+                        String d = rs.getString("od");
+                        l1.setText(ques);
+                        a1.setText(a);
+                        b1.setText(b);
+                        c1.setText(c);
+                        d1.setText(d);
+                        
+                        
+                    }
+                    else
+                    { JOptionPane.showMessageDialog(null,"Error");}}
+            catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);
+           
+            
+            
+            }
+        try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "select * from ps1 where Sno=2;";
+                    ResultSet rs = stmt.executeQuery(query);
+                    if (rs.next()){
+                        String ques = rs.getString("Question");
+                        String A = rs.getString("oa");
+                        String B = rs.getString("ob");
+                        String C = rs.getString("oc");
+                        String D = rs.getString("od");
+                        l3.setText(ques);
+                        a2.setText(A);
+                        b2.setText(B);
+                        c2.setText(C);
+                        d2.setText(D);
+                        
+                        
+                    }
+                    else
+                    { JOptionPane.showMessageDialog(null,"Error");}}
+            catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);}
+        
+        try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "select * from ps1 where Sno=3;";
+                    ResultSet rs = stmt.executeQuery(query);
+                    if (rs.next()){
+                        String ques = rs.getString("Question");
+                        String A3 = rs.getString("oa");
+                        String B3 = rs.getString("ob");
+                        String C3 = rs.getString("oc");
+                        String D3 = rs.getString("od");
+                        l5.setText(ques);
+                        a3.setText(A3);
+                        b3.setText(B3);
+                        c3.setText(C3);
+                        d3.setText(D3);
+                        
+                        
+                    }
+                    else
+                    { JOptionPane.showMessageDialog(null,"Error");}}
+            catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);}
+        try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "select * from ps1 where Sno=4;";
+                    ResultSet rs = stmt.executeQuery(query);
+                    if (rs.next()){
+                        String ques = rs.getString("Question");
+                        String A4 = rs.getString("oa");
+                        String B4 = rs.getString("ob");
+                        String C4 = rs.getString("oc");
+                        String D4 = rs.getString("od");
+                        l4.setText(ques);
+                        a4.setText(A4);
+                        b4.setText(B4);
+                        c4.setText(C4);
+                        d4.setText(D4);
+                        
+                        
+                    }
+                    else
+                    { JOptionPane.showMessageDialog(null,"Error");}}
+            catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);}
+
+
+
+
+
+
+submit btn
+if ((a1.isSelected() || b1.isSelected() || c1.isSelected() || d1.isSelected())&&(a2.isSelected() || b2.isSelected() || c2.isSelected() || d2.isSelected())
+                &&(a3.isSelected() || b3.isSelected() || c3.isSelected() || d3.isSelected())&&(a4.isSelected() || b4.isSelected() || c4.isSelected() || d4.isSelected())){
+            
+        
+         if (a1.isSelected()&& c2.isSelected() && b3.isSelected() && c4.isSelected()){
+           mp = 4;}
+        else if (a1.isSelected()&& c2.isSelected() && b3.isSelected()){
+        mp= 3;}
+        else if (a1.isSelected()&& c2.isSelected()){
+        mp =2;}
+        else if(a1.isSelected()){
+        mp=1;} 
+        else {mp = 0;}
+        System.out.print(""+mp);
+        
+        int ans = JOptionPane.showConfirmDialog(null,"Scores submitted! Wanna check your ans.?");
+        if (ans== JOptionPane.YES_OPTION){
+            if (a1.isSelected()&& c2.isSelected() && b3.isSelected() && c4.isSelected()){
+           JOptionPane.showMessageDialog(null,"Ques1 correct,  Ques2 correct,   Ques3 correct,   Ques4 correct");}
+            
+        else if (a1.isSelected()&& c2.isSelected() && b3.isSelected()){
+        JOptionPane.showMessageDialog(null,"Ques1 correct,   Ques2 correct,   Ques3 correct,  Ques4 incorrect(sol.C)");}
+        else if (a1.isSelected()&& c2.isSelected()){
+        JOptionPane.showMessageDialog(null,"Ques1 correct,   Ques2 correct,   Ques3 incorrect(sol.B),   Ques4 incorrect(sol.C)");}
+        else if(a1.isSelected()){
+        JOptionPane.showMessageDialog(null,"Ques1 correct,   Ques2 incorrect(sol.C),   Ques3 incorrect(sol.B),   Ques4 incorrect(sol.C)");} 
+        else {JOptionPane.showMessageDialog(null,"Ques1 incorrect(sol.A),   Ques2 incorrect(sol.C),   Ques3 incorrect(sol.B),   Ques4 incorrect(sol.C)");}
+        
+        new set1sub().setVisible(true);
+        this.setVisible(false);
+        }
+        
+        else if(ans== JOptionPane.NO_OPTION) 
+        {new set1sub().setVisible(true);
+        this.setVisible(false);}}
+        else {JOptionPane.showMessageDialog(null,"Please answer all the Questions!");}
+        
+    }
+
+    
+
+change subject btn
+int q = JOptionPane.showConfirmDialog(null,"Are you sure that u wanna change your subject?");
+        if (q== JOptionPane.YES_OPTION)
+        {new set1sub().setVisible(true);
+        this.setVisible(false);}

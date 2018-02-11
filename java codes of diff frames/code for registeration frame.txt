@@ -1,0 +1,86 @@
+register btn
+String name = n1.getText();
+        int cls  = Integer.parseInt(c1.getText());
+        String section = se1.getText();
+        String school = sc1.getText();
+        String address = a1.getText();
+        int pno  = Integer.parseInt(p1.getText());
+        String uid = u1.getText();
+        String pword = pas1.getText();
+        String gen = "0";
+        
+        if (m1.isSelected()){
+           gen = "M";
+            
+        }else if (f1.isSelected()){
+            gen = "F";
+        }
+        else{JOptionPane.showMessageDialog(null,"Please select a suitable gender");}
+        
+        if (cls>8 && cls<13){
+            try {
+            Class.forName("java.sql.Driver");
+                    Connection conn =DriverManager.getConnection("jdbc:mysql://localhost/quiz","root","admin");
+                    Statement stmt =conn.createStatement();
+                    String query = "insert into user_details values("+"'"+name+"',"+"'"+cls+"',"+"'"+section+"',"+"'"+school+"',"+"'"+address+"',"+"'"+pno+"',"+"'"+gen+"');";
+                    
+                    String query1 = "insert into login values("+"'"+uid+"',"+"'"+pword+"');";
+                    
+                    stmt.executeUpdate(query);
+                    stmt.executeUpdate(query1);
+                    JOptionPane.showMessageDialog(null,"Entries recorded");}
+            catch(Exception e){
+           JOptionPane.showMessageDialog(null,e);
+           
+            
+            
+            }
+            
+            
+        }
+        else {
+            JOptionPane.showMessageDialog(null,"Please enter class between 9-12");
+            
+        }
+
+
+
+
+exit btn
+System.exit(0);
+
+
+
+
+
+
+clear btn
+n1.setText("");
+        c1.setText("");
+        se1.setText("");
+        sc1.setText("");
+        a1.setText("");
+        p1.setText("");
+        u1.setText("");
+        pas1.setText("");
+
+
+
+
+
+proceed btn
+new login().setVisible(true);
+        this.setVisible(false);
+
+
+
+
+
+alredy a member btn
+new login().setVisible(true);
+        this.setVisible(false);
+
+           
+            
+            
+            

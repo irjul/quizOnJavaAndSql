@@ -1,0 +1,15 @@
+proceed btn 
+if (r1.isSelected())
+        {new set1sub().setVisible(true);
+        this.setVisible(false);
+        
+        }
+        else if (r2.isSelected())
+        {new set2sub().setVisible(true);
+        this.setVisible(false);}
+        else {JOptionPane.showMessageDialog(null,"Class not selected !");}
+
+
+logout btn
+new login().setVisible(true);
+        this.setVisible(false);
